@@ -1,0 +1,381 @@
+/* Generales  */
+
+html{
+    font-size: 20px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(221, 221, 221);  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+
+nav{
+    display: flex;
+
+}
+
+.alinear-derecha{
+    align-items: right;
+    display: flex;
+}
+
+/* Header */
+
+header{
+    background-color: orange;
+    box-shadow: 1.5px 1.5px 4px rgb(116, 115, 115);
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    z-index: 1;
+}
+
+header img{
+    height: 50px;
+    width: auto;
+    padding-right: 3rem;
+}
+
+header div p a{
+    color: #251627;
+}
+
+header div p a:hover{
+    color: #FFFFFF;
+}
+
+header input{
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: auto;
+    padding-right: 0.5rem;
+    margin-right: 1rem;
+}
+
+header input:focus{
+    outline: none;
+    width: 200px;
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Reutilizables  */
+
+.fila{
+    display: flex;
+    padding: 1rem 0.5rem;
+}
+
+.col-33{
+    width: 25%;
+    padding: 0.5rem 0.5rem;
+}
+
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Hero */
+
+.hero{
+    width: 100%;
+    height: 50vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+.hero div:first-child{
+    background-image: url(../img/young-curly-man-playing-with-the-phone-looks-happy-and-fisted-after-winning-isolated-on-white-wall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Titulo */
+
+.titulo-1{
+    color: #E5A800;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Card */
+
+.fila.grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,500px);
+    grid-gap: 1.5rem;
+    justify-content: center;
+}
+
+.card{
+    width: 500px;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px grey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card img{
+    height: 250px;
+    margin: 0.5rem;
+}
+
+.card .nova{
+width: 55%;
+}
+
+.card .info-card{
+    padding: 0.8rem;
+    width: 100%;
+    height: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card .info-card p{
+    margin-bottom: 0.5rem;
+}
+
+.card .info-card p:first-child{
+    font-weight: bold;
+    color: orange;
+}
+
+.card .info-card a{
+    background-color: orange;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+    padding: 0.5em 1em;
+    align-self: center;
+    transition: 400ms all ease-in-out;
+}
+
+.card .info-card a:hover{
+    background-color: #8b5014;
+}
+
+/* Colores */
+
+.amarrillo{
+    color: #E5A800;
+}
+
+.blanco{
+    color: #FFFFFF;
+}
+
+.Morados{
+    color: #251627;
+}
+
+/* Footer */
+
+footer{
+    background-color: #E5A800;
+}
+
+footer img{
+    height: 48px;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+footer p:first-child{
+    color: white;
+    font-weight: bold;
+}
+
+.lista-footer{
+    list-style: none;
+}
+
+footer div ul li a:hover{
+    color: #FFFFFF;
+}
+
+footer i{
+    font-size: 1rem;
+    color: #251627;
+    padding-right: 5px;
+}
+
+footer i:hover{
+    color: #FFFFFF;
+}
+
+/* Estructura General - Superior*/
+
+.superior{
+    margin-top: 100px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.superior img{
+    width: 800px;
+    height: auto;
+    margin-right: 0.8em;
+    margin-bottom: 0.2em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px grey;
+}
+
+.superior .vistas{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 0.5rem;
+}
+
+.superior .vistas .col-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em;
+}
+.superior .vistas .col-2 img{
+    margin: 0.5em;
+}
+
+.superior .vistas .col-1 img{
+    width: 80vw;
+    height: 480px;
+    margin: 0.5em;
+}
+
+.descripcion{
+    margin: 3rem;
+}
+
+.descripcion h1{
+    color: orange;
+    text-shadow: 1px 1px 2px black;
+}
+
+.descripcion .crp{
+    text-align: justify;
+}
+
+.descripcion p:nth-child(3),
+.descripcion p:nth-child(4){
+    font-weight: bold;
+}
+
+.descripcion p:nth-child(3){
+    font-size: 30px;
+}
+
+.descripcion .botones-2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.descripcion .botones-2 button{
+    background-color: orange;
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 0.5rem 4rem;
+    transition: 400ms all ease-in-out;
+}
+
+.descripcion .botones-2 button:hover{
+    background-color: rgb(192, 125, 0);
+}
+
+/* Estructura General - Inferior*/
+
+.inferior{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-around;
+   
+}
+
+.tabla table{
+    border-collapse: collapse;
+    font-size: 30px;
+}
+
+.tabla table .fila-0{
+    color: orange;
+    background-color: rgb(248, 238, 215);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.tabla table .col-1{
+    background-color: rgb(248, 238, 215);
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.tabla table .col-2{
+    background-color: rgb(248, 245, 239);
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 25px;
+}
