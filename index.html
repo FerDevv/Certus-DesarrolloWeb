@@ -4,87 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Inicio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="Bootstrap/bootstrap-5.2.2/scss/bootstrap.css">
     <link href="fontawesome/css/all.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
         <div>
-            <img src="img/llamada.png" alt="Logo-celular">
+          <!-- <img src="img/llamada.png" alt="Logo-celular">
             <p><a href="index.html">Catalogo</a></p>
             </div>
             <div>
             <input type="text" placeholder="Buscar equipo">
             <a href="#"><img src="img/carrito-de-compras.png" alt="carro-de-compras"></a>
+            -->
+            <nav class="navbar">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">Catalogo</a>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar equipo" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
+                </div>
+              </nav>
+        
         </div>
     </header>
     <div class="hero">
         <div><!--imagen--></div>
     </div>
+
     <h1 class="titulo-1">Nuestros equipos</h1>
     <section id="equipos" class="fila grid">
-        <div class="card">
-            <img src="img/D_NQ_NP_690265-MLA49949612039_052022-O.jpg" alt="Xiaomi-10c">
-            <div class="info-card">
-                <div>
-                    <h3 class="amarrillo">Xiaomi Redmi 10C</h3>
-                    <p class="morado">S/819</p>
-                    <a href="redmi10c.html">Mas Informacion</a>
-                </div>
+
+        <div class="card" style="width: 25rem;">
+            <img src="img/D_NQ_NP_690265-MLA49949612039_052022-O.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">XIAMO REDMI 10C</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="redmi10c.html" class="btn btn-primary">VER INFORMACION</a>
+            </div>
+          </div>
+
+        <div class="card" style="width: 25rem;">
+            <img src="img/samsung-galaxy-a53-5g.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SAMSUNG GALAXY A53</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="a53.html" class="btn btn-primary">VER INFORMACION</a>
             </div>
         </div>
-        <div class="card">
-            <img src="img/samsung-galaxy-a53-5g.jpg" alt="Samsung-a53">
-            <div class="info-card">
-                <div>
-                    <h3 class="amarrillo">Samsung Galaxy A53</h3>
-                    <p class="morado">S/2119</p>
-                    <a href="a53.html">Mas Informacion</a>
-                </div>
+
+        <div class="card" style="width: 25rem;">
+            <img src="img/samsung-galaxy-s21-fe-5g.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SAMSUNG GALAXY S21</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="s21.html" class="btn btn-primary">VER INFORMACION</a>
             </div>
         </div>
-        <div class="card">
-            <img src="img/samsung-galaxy-s21-fe-5g.jpg" alt="Samsung-s21-fe">
-            <div class="info-card">
-                <div>
-                    <h3 class="amarrillo">Samsung Galaxy S21 FE</h3>
-                    <p class="morado">S/2949</p>
-                    <a href="s21.html">Mas Informacion</a>
-                </div>
+
+        <div class="card" style="width: 25rem;">
+            <img src="img/LD0005976190.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">XIAOMI REDMI 10A</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="10a.html" class="btn btn-primary">VER INFORMACION</a>
             </div>
         </div>
-        <div class="card">
-            <img src="img/LD0005976190.jpg" alt="Xiaomi-10A">
-            <div class="info-card">
-                <div>
-                    <h3 class="amarrillo">Xiaomi Redmi 10A</h3>
-                    <p class="morado">S/619</p>
-                    <a href="10a.html">Mas Informacion</a>
-                </div>
+
+        <div class="card" style="width: 25rem;">
+            <img src="img/2065288157721_2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Huawei 050 PRO</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="p50.html" class="btn btn-primary">VER INFORMACION</a>
             </div>
         </div>
-        <div class="card">
-            <img class="nova" src="img/2065288157721_2.jpg" alt="Huawei-p50-pro">
-            <div class="info-card">
-                <div>
-                    <h3 class="amarrillo">Huawei P50 Pro</h3>
-                    <p class="morado">S/4559</p>
-                    <a href="p50.html">Mas Informacion</a>
-                </div>
+
+        <div class="card" style="width: 25rem;">
+            <img src="img/18917005_1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">HUAWEI NOVA Y70</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="y70.html" class="btn btn-primary" >VER INFORMACION</a>
             </div>
         </div>
-        <div class="card">
-            <img src="img/18917005_1.jpg" alt="Huawei-nova-y70">
-            <div class="info-card">
-                <div>
-                    <h3 class="amarrillo">Huawei Nova Y70</h3>
-                    <p>S/919</p>
-                    <a href="y70.html">Mas Informacion</a>
-                </div>
-            </div>
-        </div>
+
     </section>
+
+
     <footer class="fila">
         <div class="col-33">
             <h4 class="blanco">Contacto</h4>
@@ -115,5 +127,9 @@
                 <a><i class="fa-brands fa-youtube"></i></a>
         </div>
     </footer>
+
+    <script src="Bootstrap/bootstrap-5.2.2/dist/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/estilos.js"></script>
 </body>
 </html>

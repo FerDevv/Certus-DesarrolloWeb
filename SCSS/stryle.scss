@@ -1,0 +1,41 @@
+$blue:    #101e33;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+
+
+$card-spacer-y:                     $spacer;
+$card-spacer-x:                     $spacer;
+$card-title-spacer-y:               $spacer * .5;
+$card-border-width:                 $border-width;
+$card-border-color:                 var(--#{$prefix}border-color-translucent);
+$card-border-radius:                $border-radius;
+$card-box-shadow:                   null;
+$card-inner-border-radius:          subtract($card-border-radius, $card-border-width);
+$card-cap-padding-y:                $card-spacer-y * .5;
+$card-cap-padding-x:                $card-spacer-x;
+$card-cap-bg:                       rgba($black, .03);
+$card-cap-color:                    null;
+$card-height:                       null;
+$card-color:                        $orange;
+$card-bg:                           $white;
+$card-img-overlay-padding:          $spacer;
+$card-group-margin:                 $grid-gutter-width * .5;
+
+
+
+
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here

@@ -22,6 +22,10 @@ img{
     max-width: 100%;
 }
 
+.bg-light{
+    background-color: #E5A800;
+}
+
 nav{
     display: flex;
 
@@ -48,6 +52,7 @@ header{
     padding: 0 1em;
     z-index: 1;
 }
+
 
 header img{
     height: 50px;
